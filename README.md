@@ -26,8 +26,8 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  bencoding.cr:
-    github: Hamdiakoguz/bencoding.cr
+  bencoding:
+    github: seik/bencoding
 ```
 
 
@@ -35,7 +35,7 @@ dependencies:
 
 
 ```crystal
-require "bencoding.cr"
+require "bencoding"
 
 # Decoding:
 BEncoding.decode("d3:foo3:bar3:bazi42ee") # => {"foo" => "bar", "baz" => 42}
@@ -51,7 +51,7 @@ BEncoding.encode({"foo" => 1, "bar" => -10}) # => "d3:bari-10e3:fooi1ee"
 
 ## Contributing
 
-1. Fork it ( https://github.com/Hamdiakoguz/bencoding.cr/fork )
+1. Fork it ( https://github.com/seik/bencoding/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
