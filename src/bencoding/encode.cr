@@ -21,7 +21,7 @@ module BEncoding
       @io << param
     end
 
-    def encode(param : Hash(String, T))
+    def encode(param : Hash(String, ObjectType))
       @io << DICTIONARY_START
       param.keys.sort.each do |key|
         encode(key)
