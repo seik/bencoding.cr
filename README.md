@@ -27,7 +27,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   bencoding:
-    github: seik/bencoding
+    github: seik/bencoding.cr
 ```
 
 
