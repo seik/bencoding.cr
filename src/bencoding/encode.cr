@@ -1,6 +1,8 @@
+require "io/memory"
+
 module BEncoding
   def self.encode(param)
-    io = MemoryIO.new
+    io = IO::Memory.new
     Encoder.new(io).encode(param)
     io.to_s
   end
